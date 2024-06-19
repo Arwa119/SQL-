@@ -43,8 +43,10 @@ ON e.manager_id = m.emp_id;
 SELECT * FROM Employee WHERE job_name ='CLERK';
 --21
 SELECT * FROM Employee WHERE DATEDIFF(YEAR, hire_date, GETDATE()) > 27;
+
 --22
 SELECT * FROM Employee WHERE salary  < 3500;
+
 --23
 SELECT emp_name,job_name,salary FROM Employee WHERE job_name ='ANALYST';
 --24
@@ -106,7 +108,7 @@ SELECT * FROM Employee WHERE YEAR(hire_date) BETWEEN 1990 AND 1999;
 --49
 SELECT * FROM Employee WHERE job_name = 'MANAGER' AND dep_id IN (1001, 2001);
 --50
-SELECT * FROM Employee WHERE MONTH(hire_date) = 2 AND salary BETWEEN 1001 AND 2000;
+SELECT * FROM Employee WHERE MONTH(hire_date) = 2 AND salary BETWEENÂ 1001Â ANDÂ 2000;
 --51
 SELECT * FROM Employee WHERE YEAR(hire_date) <> 1991;
 
